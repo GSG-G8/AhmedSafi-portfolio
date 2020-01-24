@@ -12,17 +12,34 @@
   <body>
     <a class="menu-icon" title="display nav bar"><i class="fas fa-bars"></i></a>
     <aside class="aside">
-      <img src="" alt="" class="aside__personal-img" />
-      <div class="aside__main-heading"></div>
-      <nav class="aside__main-nav"></nav>
-      <footer class="aside__main-footer"></footer>
+      <img
+        src="./resources/images/personal-image.jpeg"
+        alt="personal image for Ahmed Safi"
+        class="aside__personal-img"
+      />
+      <div class="aside__main-heading">
+        <h1 class="aside__main-heading__heading">Ahmed Safi</h1>
+        <span class="aside__main-heading__sub-heading"
+          >Full Stack web developer</span
+        >
+      </div>
+      <nav class="aside__main-nav">
+        <ul class="aside__main-nav__items">
+          <a href="#home"><li class="list-item">Home</li></a>
+          <a href="#about"><li class="list-item">About</li></a>
+          <a href="#services"><li class="list-item">Services</li></a>
+          <a href="#skills"><li class="list-item">Skills</li></a>
+          <a href="#contacts"><li class="list-item">Contacts</li></a>
+        </ul>
+      </nav>
+      <footer class="aside__main-footer">Copyright © 2020, Ahmed Safi.</footer>
     </aside>
     <main class="main">
-      <section class="main__home"></section>
-      <section class="main__about"></section>
-      <section class="main__services"></section>
-      <section class="main__skills"></section>
-      <section class="main__contacts"></section>
+      <section class="main__home" id="home"></section>
+      <section class="main__about" id="about"></section>
+      <section class="main__services" id="services"></section>
+      <section class="main__skills" id="skills"></section>
+      <section class="main__contacts" id="contacts"></section>
     </main>
     <script src="./resources/js/main.js"></script>
   </body>
