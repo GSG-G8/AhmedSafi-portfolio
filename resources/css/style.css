@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  height: 100%;
+}
+@media screen and (min-width: 1200px) {
+  * {
+    font-size: 16px;
+  }
+
+  body {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  .menu-icon {
+    display: none;
+  }
+  .aside {
+    height: 100%;
+    margin-left: 2rem;
+    background-color: #ccc;
+  }
+  .main {
+    height: 100%;
+    overflow-y: scroll;
+  }
+}
+@media screen and (max-width: 1200px) {
+  * {
+    font-size: 8px;
+  }
+  body {
+    height: 100%;
+    margin: 6rem 2rem;
+  }
+  .menu-icon {
+    margin: 1rem;
+    position: fixed;
+    top: 3rem;
+    left: 2rem;
+    transform: scale(3);
+    text-decoration: none;
+  }
+}
