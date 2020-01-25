@@ -200,6 +200,36 @@ html {
     text-align: center;
     padding-top: 1rem;
   }
+  .main__skills {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 5rem auto 5rem;
+    grid-template-rows: 5rem 1rem 1rem 2.5rem auto 1rem;
+    background-image: url(./../images/skill.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100% 50%;
+  }
+  .main__skills__heading-1 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    font-size: 0.8rem;
+    color: #999999;
+    font-family: "Quicksand", sans-serif;
+  }
+  .main__skills__heading-2 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    font-size: 1.2rem;
+    font-family: "Playfair Display", serif;
+    color: rgba(0, 0, 0, 0.9);
+  }
+  .main__skills__p {
+    grid-column: 2/3;
+    grid-row: 5/6;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(0, 0, 0, 0.8);
+  }
 }
 /*Make aside scrollable*/
 @media screen and (max-height: 500px) {
@@ -416,6 +446,37 @@ html {
     text-align: center;
     font-size: 1.25rem;
     padding-top: 1rem;
+  }
+  .main__skills {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 5rem auto 5rem;
+    grid-template-rows: 5rem 1rem 1rem 2.5rem auto 1rem;
+    background-image: url(./../images/skill.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100% 50%;
+  }
+  .main__skills__heading-1 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    font-size: 1rem;
+    color: #999999;
+    font-family: "Quicksand", sans-serif;
+  }
+  .main__skills__heading-2 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    font-size: 1.75rem;
+    font-family: "Playfair Display", serif;
+    color: rgba(0, 0, 0, 0.9);
+  }
+  .main__skills__p {
+    grid-column: 2/3;
+    grid-row: 5/6;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 1.5rem;
   }
 }
 /* Mobile size*/
@@ -669,4 +730,8 @@ html {
     font-size: 1.5rem;
     padding-top: 1rem;
   }
+}
+.main__skills__heading-1 {
+  font-size: 1.25rem;
+}
 }
