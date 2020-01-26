@@ -230,6 +230,56 @@ html {
     font-family: Arial, Helvetica, sans-serif;
     color: rgba(0, 0, 0, 0.8);
   }
+  .main__contacts{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 5rem auto 5rem;
+    grid-template-rows: 5rem 1rem 5rem 5rem auto 5rem;
+  }
+  .main__contacts__heading-1 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    font-size: 0.8rem;
+    color: #999999;
+    font-family: "Quicksand", sans-serif;
+  }
+  .main__contacts_heading-2 {
+    grid-row: 3/4;
+    grid-column: 2/3;
+    font-size: 1.2rem;
+    font-family: "Playfair Display", serif;
+    color: rgba(0, 0, 0, 0.9);
+  }
+  .main__contacts__form{
+    grid-column: 2/3;
+    grid-row: 5/6;
+    display: grid;
+    grid-template-columns: 4rem auto;
+    grid-template-rows: 3rem 1rem 3rem 1rem 3rem auto;
+  }
+  .grid__main__form-name{
+    align-self: center;  
+  } 
+  #name{
+    grid-column: 2/3;
+  }
+  .grid__main__form-email{
+    grid-row: 3/4;
+    align-self: center;
+  }
+  #email{
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  .grid__main__form-message{
+    grid-row: 5/6;
+    align-self: center;
+  }
+  #message{
+    grid-row: 5/6;
+    grid-column: 2/3;
+  }
+
 }
 /*Make aside scrollable*/
 @media screen and (max-height: 500px) {
