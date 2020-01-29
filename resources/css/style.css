@@ -67,7 +67,7 @@ body {
 .list-item:hover {
   color: #0888f1;
 }
-.list-item:active{
+.list-item:active {
   color: #0888f1;
 }
 
@@ -312,6 +312,11 @@ body {
   margin: 0.5rem;
   margin-left: 0;
 }
+.rotate {
+  transform: rotate(180deg);
+  transition: linear;
+  transition-duration: 1s;
+}
 /*Make aside scrollable*/
 @media screen and (max-height: 500px) {
   .aside {
@@ -346,14 +351,22 @@ body {
     left: 0;
     margin-left: 0;
     width: 15rem;
+  }
+  .hide {
     transform: scale(0);
+    transition-duration: 1s;
   }
-  .hide{
+  .show {
     transform: scale(1);
+    transition-duration: 1s;
   }
-  .main__contacts__form-btn{
+  .main__contacts__form-btn {
     grid-row: 6/7;
     align-self: start;
+  }
+  .main__contacts__form-btn:hover {
+    transform: scale(1.25);
+    box-shadow: rgba(0, 0, 0, 0.5);
   }
 }
 
@@ -365,16 +378,16 @@ body {
   .main__home__btn {
     width: 10rem;
   }
-  .main__about__heading1{
+  .main__about__heading1 {
     font-size: 1.4rem;
   }
-  .main__about__heading2{
+  .main__about__heading2 {
     font-size: 1.6rem;
   }
-  .main__about__p1{
+  .main__about__p1 {
     font-size: 1.2rem;
   }
-  .main__about__p2{
+  .main__about__p2 {
     font-size: 1.2rem;
   }
   .main__services {
@@ -400,10 +413,10 @@ body {
     grid-column: 2/3;
     grid-row: 9/10;
   }
-  .main__services__box-heading{
+  .main__services__box-heading {
     font-size: 1.4rem;
   }
-  .main__services__box-p{
+  .main__services__box-p {
     font-size: 1.2rem;
   }
   .main__skills {
@@ -429,10 +442,10 @@ body {
     grid-column: 2/3;
     grid-row: 9/10;
   }
-  .main__skills__box-heading{
+  .main__skills__box-heading {
     font-size: 1.4rem;
   }
-  .main__skills__box-p{
+  .main__skills__box-p {
     font-size: 1.2rem;
   }
 }

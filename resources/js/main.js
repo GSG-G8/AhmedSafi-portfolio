@@ -2,14 +2,20 @@ const menu = document.getElementById("menu-icon");
 const aside = document.getElementById("aside");
 menu.addEventListener("click", event => {
   if (menu.attributes.title.value === "hide") {
-    aside.classList.toggle("hide");
-    menu.firstChild.classList.toggle("fa-arrow-circle-right");
-    menu.firstChild.classList.toggle("fa-arrow-circle-left");
+    aside.classList.add("hide");
+    aside.classList.remove("show");
+    menu.firstChild.setAttribute(
+      "style",
+      "transform: rotate(180deg);transition-duration: 1s"
+    );
     menu.setAttribute("title", "show");
   } else {
-    aside.classList.toggle("hide");
-    menu.firstChild.classList.toggle("fa-arrow-circle-right");
-    menu.firstChild.classList.toggle("fa-arrow-circle-left");
+    aside.classList.add("show");
+    aside.classList.remove("hide");
+    menu.firstChild.setAttribute(
+      "style",
+      "transform: rotate(0deg);transition-duration: 1s"
+    );
     menu.setAttribute("title", "hide");
   }
 });
