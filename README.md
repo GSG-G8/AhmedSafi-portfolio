@@ -1,4 +1,4 @@
-# [AhmedSafi-portfolio](https://gsg-g8.github.io/To-do-list-web-app/)
+# [AhmedSafi-portfolio](https://gsg-g8.github.io/AhmedSafi-portfolio/)
 
 This is a portfolio page that I've been working on as a homework project assigned to me as a G8 chort codecademy student in Gaza sky geeks
 
